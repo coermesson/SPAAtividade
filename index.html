@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://media.timeout.com/images/105851566/1536/1152/image.jpg" type="image/png">
-    <link rel="stylesheet" href="style.css">
-    <title>Aniverse</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA Simples com Componentes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" id="logo-site" type="image/png">
-            <img src="https://media.timeout.com/images/105851566/1536/1152/image.jpg" alt="Logo">
-            </a>
-            <ul id="dynamicMenus">
-                <li><a href="#/">Home</a></li>
-                <li><a href="#/sobre">Sobre</a></li>
-                <li><a href="#/servicos">Serviços</a></li>
-                <li><a href="#/contato">Contato</a></li>
-            </ul>
-            <ul>
-                <li><a href="#/login" id="Login">Login</a></li>
-                <li><a href="#/cadastro" id="Cadastro">Registrar</a></li>
-            </ul>
+  <header>
+    <h1>SPA Simples</h1>
+    <nav>
+      <button data-page="home">Home</button>
+      <button data-page="produtos">Produtos</button>
+      <button data-page="contato">Contato</button>
+    </nav>
+  </header>
 
-        </nav>
-    </header>
-    <main id="content">
-        <h1>Bem-vindo ao nosso site!</h1>
-        <p>Este é um exemplo de uma página HTML simples.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
-    </footer>
-    <script src="script.js" type="module"></script>
+  <main>
+    <!-- Formulário para criar componentes -->
+   <div id="criar">
+  <input id="tag" placeholder="Tag (ex: p, div, h2)" value="p">
+  <input id="idAttr" placeholder="ID (opcional)">
+  <input id="classAttr" placeholder="Classe (opcional)">
+  <input id="color" type="color" placeholder="Cor do texto">
+  <input id="fontSize" placeholder="Tamanho da fonte (px)">
+  <input id="content" placeholder="Conteúdo">
+  <button id="add">Adicionar</button>
+</div>
+
+    <!-- Área dinâmica -->
+    <div id="conteudo"></div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
