@@ -1,6 +1,48 @@
 body { font-family: Arial; margin: 20px; background:#f5f5f5; }
 header { margin-bottom: 20px; }
-nav button { margin-right: 10px; padding:5px 10px; cursor:pointer; }
+nav button { margin-right: 10px; padding:5px 10px; cursor:pointer;  border: none; border-radius: 5px; background-color: #007BFF; color: white; }
 #criar { margin-bottom: 20px; }
 #criar input { padding:5px; margin-right:5px; margin-bottom:5px; }
 #conteudo { background:white; padding:20px; border-radius:5px; }
+#conteudo h2 { margin-top:0; }
+#conteudo ul { list-style-type: none; padding: 0; }
+#conteudo li { padding: 5px 0; border-bottom: 1px solid #eee; }
+#conteudo li:last-child { border-bottom: none; }
+#conteudo button { margin-left: 10px; padding:2px 5px; cursor:pointer; }
+#conteudo form input { padding:5px; margin-right:5px; margin-bottom:5px; }
+#conteudo form button { padding:5px 10px; cursor:pointer; }
+#conteudo p { color: #555; }
+#conteudo a { color: #007BFF; text-decoration: none; }
+#conteudo a:hover { text-decoration: underline; }
+#error { color: red; }
+#success { color: green; }
+.dynamic-component { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fafafa; }
+.dynamic-component:hover { background-color: #f0f0f0; }
+.dynamic-component p { margin: 0; }
+.dynamic-component h1, .dynamic-component h2, .dynamic-component h3, .dynamic-component h4, .dynamic-component h5, .dynamic-component h6 { margin: 0; }
+.dynamic-component ul { padding-left: 20px; }
+.dynamic-component ol { padding-left: 20px; }
+.dynamic-component li { margin: 5px 0; }
+.dynamic-component a { color: #007BFF; text-decoration: none; }
+.dynamic-component a:hover { text-decoration: underline; }
+#clear { background-color: #dc3545; }
+#clear:hover { background-color: #c82333; }
+#add { background-color: #28a745; }
+#add:hover { background-color: #218838; }
+#criar input[type="number"] { width: 120px; }
+#criar input[type="color"] { width: 50px; padding: 0; }
+#criar input[type="text"] { width: 150px; }
+#criar input[type="text"]:focus, #criar input[type="number"]:focus { outline: none; border: 2px solid #007BFF; }
+#criar input[type="color"]:focus { outline: none; border: 2px solid #007BFF; }
+#criar button { border: none; border-radius: 5px; color: white; }
+#criar button:focus { outline: none; }
+button:disabled { background-color: #6c757d; cursor: not-allowed; }
+#criar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+#criar input, #criar button { flex: 1 1 auto; min-width: 120px; }
+#criar button { flex: 0 0 auto; }
+#conteudo { min-height: 200px; }
+#conteudo .dynamic-component { transition: background-color 0.3s; }
+#conteudo .dynamic-component:hover { background-color: #e9ecef; }
+button { transition: background-color 0.3s; }
+#criar button { transition: background-color 0.3s; }
+#criar input { transition: border 0.3s; }

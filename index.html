@@ -23,13 +23,25 @@
   <input id="idAttr" placeholder="ID (opcional)">
   <input id="classAttr" placeholder="Classe (opcional)">
   <input id="color" type="color" placeholder="Cor do texto">
-  <input id="fontSize" placeholder="Tamanho da fonte (px)">
-  <input id="content" placeholder="Conteúdo">
+  <input id="fontSize" placeholder="Tamanho da fonte (px)" type="number" min="8" max="72" required>
+  <input id="content" placeholder="Conteúdo" required>
   <button id="add">Adicionar</button>
+  <button id="clear">Limpar</button>
 </div>
 
     <!-- Área dinâmica -->
-    <div id="conteudo"></div>
+    <div id="conteudo">
+      <h2>Bem-vindo à SPA Simples!</h2>
+      <p>Use o formulário acima para adicionar componentes dinamicamente.</p>
+      <div class="dynamic-component">
+        <p>Este é um componente dinâmico de exemplo.</p>
+        <button id="edit" data-target="editTarget">Editar</button>
+        <!-- <input id="editContent" placeholder="Novo conteúdo">
+        <input id="editColor" type="color" placeholder="Nova cor">
+        <input id="editFontSize" placeholder="Novo tamanho (px)" type="number" min="8" max="72">
+        <button class="remove">Remover</button> -->
+      </div>
+    </div>
   </main>
 
   <script src="script.js"></script>
